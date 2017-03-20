@@ -27,3 +27,19 @@ var twoSum = function (nums, target) {
 
 console.log(twoSum([2, 7, 11, 15], 9));
 ```
+
+- 解法2：
+
+```
+var twoSum = function(nums, target) {
+    var temp = [];
+    for (var i = 0; i < nums.length; i++) {
+        if (temp[target - nums[i]] !== undefined) {
+            return [temp[target - nums[i]], i];
+        }
+        if (!temp[nums[i]]) {
+            temp[nums[i]] = i;
+        }
+    }
+};
+```
