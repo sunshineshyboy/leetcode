@@ -27,6 +27,27 @@ var twoSum = function (nums, target) {
 
 console.log(twoSum([2, 7, 11, 15], 9));
 ```
+```
+### 举一反三
+var twoSum = function (nums, target) {
+    var len = nums.length;
+    var arr = [];
+    for (var i = 0; i < len - 1; i++) {
+        for (var j = i + 1; j < len; j++) {
+            if (nums[i] + nums[j] == target) {
+                arr.push([i,j])
+            }
+        }
+    }
+    return arr;
+    return null;
+};
+
+console.log(twoSum([1,2,3,4,5,6,7,8,9], 10));
+// [[0,8][1,7][2,6][3,5]]
+
+```
+
 
 - 解法2：
 
