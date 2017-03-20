@@ -85,5 +85,5 @@ var twoSum = function(nums, target) {
 | 4 | 69 | temp[69] | temp[69]=4 | 82-69 ,13 | tmmp[13] | tmmp[13] == undefined |
 | 5 | 11 | temp[11] | temp[11]=4 | 82-11 ,71 | tmmp[71] | tmmp[71] == undefined |
 | 6 | 55 | temp[55] | temp[55]=4 | 82-55 ,27 | tmmp[27] | tmmp[27] == undefined |
-| 7 | 71 | temp[71] | temp[71]=4 | 82-71 ,11 | tmmp[11] | 此时undefined等于4，执行并return |
+| 7 | 71 | temp[71] | temp[71]=4 | 82-71 ,11 | tmmp[11] | 此时tmmp[11]等于4，执行并return |
 
