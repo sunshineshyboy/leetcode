@@ -64,3 +64,13 @@ var twoSum = function(nums, target) {
     }
 };
 ```
+> nums=[1,3,5,7,9,11] , target=10
+
+|i|nums[i]|target-nums[i]|temp[target-nums[i]]|
+| :---: | :---: | :---: | :---: |
+| 0 | 1 | 10-1 ,9 | tmmp[9] |
+| 1 | 3 | 10-3 ,7 | tmmp[7] |
+| 2 | 5 | 10-5 ,5 | tmmp[5] |
+| 3 | 7 | 10-7 ,3 | tmmp[3] |
+| 4 | 9 | 10-9 ,1 | tmmp[1] |
+
