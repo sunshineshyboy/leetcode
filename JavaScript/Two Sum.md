@@ -66,11 +66,11 @@ var twoSum = function(nums, target) {
 ```
 > nums=[1,3,5,7,9,11] , target=10
 
-|i|nums[i]|target-nums[i]|temp[target-nums[i]]|
-| :---: | :---: | :---: | :---: |
-| 0 | 1 | 10-1 ,9 | tmmp[9] |
-| 1 | 3 | 10-3 ,7 | tmmp[7] |
-| 2 | 5 | 10-5 ,5 | tmmp[5] |
-| 3 | 7 | 10-7 ,3 | tmmp[3] |
-| 4 | 9 | 10-9 ,1 | tmmp[1] |
+|i|nums[i]| temp[nums[i]] | temp[nums[i]] = i | target-nums[i] | temp[target-nums[i]] | # |
+| :---: |  :---:  | :---: | :---: | :---: | :---: | :---: |
+| 0 | 1 | temp[1] | temp[1]=0 | 10-1 ,9 | tmmp[9] |   tmmp[9] == undefined |
+| 1 | 3 | temp[3] | temp[3]=1 | 10-3 ,7 | tmmp[7] |   tmmp[7] == undefined |
+| 2 | 5 | temp[5] | temp[5]=2 | 10-5 ,5 | tmmp[5] |   tmmp[5] == undefined |
+| 3 | 7 | temp[7] | temp[7]=3 | 10-7 ,3 | tmmp[3] | 此时temp[3]不等于undefined,等于1，执行并return |
+| 4 | 9 | temp[9] | temp[9]=4 | 10-9 ,1 | tmmp[1] | |
 
