@@ -3,5 +3,5 @@
 
 | # | Title | Diffculty |
 | --- | :---: | :---: |
-| 1 | Two Sum | Easy |
+| 1 | <a href="#">Two Sum</a> | Easy |
 
